@@ -1,0 +1,4 @@
+tensorflow==2.8.1
+librosa
+
+# Note: originally needed to conda install -c conda-forge librosa to get soundfile to work

@@ -1,0 +1,8 @@
+*.wav
+*.mid
+*.sf2
+*.h5 # saved models
+saved_models
+.DS_Store
+
+__pycache__
