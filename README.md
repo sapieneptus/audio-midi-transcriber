@@ -23,8 +23,6 @@ We want to create a simple parallel file structure so we can have a set of files
 
 At this point, after manually inspecting some of the midi and audio pairs, I realized a problem: the lengths were not the same. This means I couldn't make a stable mapping of a fixed number of samples to a fixed expected output window (e.g. 16000 samples per 1 second output or similar). If I use the files as-is, it means I would need to have both a variable input size and output size, since the time ratio is different for every midi-wav pair.
 
-So much for 'nice clean dataset'.
-
 Fortunately, I am left with one option which may work: convert the midi files to wav (using any number of digital instrument libraries) and use those as my training inputs. They won't be nearly as human as the actual performance recordings and will likely suffer testing errors because midi-generated wavs are extremely clean audio, unlike many real-world recorded audio samples. Still, it's a starting point, and if it works I could as a next step add noise / distortions to the generated wavs in order to make the model more robust to real world imperfections.
 
 Anyway, the next step in data preparation is to convert all midi files to wavs on the command line. You will need the following packages:
