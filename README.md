@@ -6,7 +6,7 @@
 - [References](#references)
 - [MT3](#mt3)
 
-# An ok audio transcriber
+# An ~ok~ bad audio transcriber
 
 
 # Installing Dependencies
@@ -62,4 +62,4 @@ Note that, for some reason, file 2570 resulted in an empty wav file and could no
 
 # MT3
 
-TODO
+I required parts of the MT3 library to get the project to work. However, I was not able to simply clone the repo as-is since I couldn't install the dependencies. In the absence of time I copied the files into an `mt3_modified` directory and included a notice in their headers (as well as in a README in that directory). I believe this is sufficient per the Apache 2.0 license requirements, but I will need to verify.
